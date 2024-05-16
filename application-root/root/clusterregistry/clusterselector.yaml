@@ -1,7 +1,7 @@
 kind: ClusterSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: dev-clusters
+  name: minikube
 spec:
   selector:
     matchLabels:

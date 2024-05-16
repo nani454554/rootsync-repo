@@ -1,0 +1,15 @@
+apiVersion: configsync.gke.io/v1alpha1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: configsync-devops
+spec:
+  sourceType: git
+  sourceFormat: unstructured
+  git:
+    repo: https://gitlab.com/config-management2/namespace-repo.git
+    branch: dev
+    dir: application-namespace-config/namespaces/configsync-devops/overlay-dev
+    auth: token
+    secretRef:
+      name: git-creds

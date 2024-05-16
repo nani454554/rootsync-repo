@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: configsync-devops
   annotations:
-    configmanagement.gke.io/cluster-selector:dev-clusters
+    configmanagement.gke.io/cluster-selector: minikube

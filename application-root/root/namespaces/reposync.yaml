@@ -3,8 +3,8 @@ kind: RepoSync
 metadata:
   name: repo-sync
   namespace: configsync-devops
-  # annotations:
-  #   configmanagement.gke.io/cluster-selector: dev-clusters 
+  annotations:
+    configsync.gke.io/cluster-name-selector: minikube
 #hi
 spec:
   sourceType: git

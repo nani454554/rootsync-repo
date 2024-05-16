@@ -2,7 +2,7 @@ apiVersion: configsync.gke.io/v1alpha1
 kind: RepoSync
 metadata:
   name: repo-sync
-  namespace: config-management-system
+  namespace: configsync-devops
   # annotations:
   #   configmanagement.gke.io/cluster-selector: dev-clusters
 spec:

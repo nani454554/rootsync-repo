@@ -4,7 +4,7 @@ metadata:
   name: syncs-repo
   namespace: configsync-devops
   annotations:
-    configmanagement.gke.io/cluster-selector: minikube
+    configsync.gke.io/cluster-name-selector: minikube
 subjects:
 - kind: ServiceAccount
   name: ns-reconciler-configsync-devops

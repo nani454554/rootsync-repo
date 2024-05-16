@@ -2,7 +2,7 @@ apiVersion: configsync.gke.io/v1alpha1
 kind: RepoSync
 metadata:
   name: repo-sync
-  namespace: configsync-devops
+  namespace: config-management-system
 spec:
   sourceType: git
   sourceFormat: unstructured

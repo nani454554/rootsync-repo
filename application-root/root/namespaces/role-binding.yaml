@@ -3,6 +3,8 @@ apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: syncs-repo
   namespace: configsync-devops
+  annotations:
+    configmanagement.gke.io/cluster-selector: minikube
 subjects:
 - kind: ServiceAccount
   name: ns-reconciler-configsync-devops

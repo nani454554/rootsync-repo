@@ -12,7 +12,7 @@ spec:
   git:
     repo: https://github.com/nani454554/applicationreposync.git
     branch: main
-    dir: application-namespace-config/namespaces/configsync-devops/overlay-dev
+    dir: application-namespace-config/namespaces/configsync-devops/deployment-manifests
     auth: token
     secretRef:
       name: nikhil

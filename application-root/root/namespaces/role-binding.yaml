@@ -1,13 +1,13 @@
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: syncs-repo
+  name: configsync-devops-1 
   namespace: configsync-devops
   annotations:
     configsync.gke.io/cluster-name-selector: minikube
 subjects:
 - kind: ServiceAccount
-  name: ns-reconciler-configsync-devops
+  name: ns-reconciler-configsync-devops-1
   namespace: config-management-system
 roleRef:
   kind: ClusterRole

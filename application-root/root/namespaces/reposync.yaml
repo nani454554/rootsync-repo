@@ -3,6 +3,8 @@ kind: RepoSync
 metadata:
   name: repo-sync
   namespace: config-management-system
+  annotations:
+    configmanagement.gke.io/cluster-selector: dev-clusters
 spec:
   sourceType: git
   sourceFormat: unstructured

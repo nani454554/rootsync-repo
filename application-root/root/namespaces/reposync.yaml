@@ -4,7 +4,8 @@ metadata:
   name: repo-sync
   namespace: configsync-devops
   # annotations:
-  #   configmanagement.gke.io/cluster-selector: dev-clusters
+  #   configmanagement.gke.io/cluster-selector: dev-clusters 
+#hi
 spec:
   sourceType: git
   sourceFormat: unstructured

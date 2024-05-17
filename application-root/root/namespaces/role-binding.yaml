@@ -7,7 +7,7 @@ metadata:
     configsync.gke.io/cluster-name-selector: minikube
 subjects:
 - kind: ServiceAccount
-  name: ns-reconciler-configsync-devops-1
+  name: ns-reconciler-configsync-devops
   namespace: config-management-system
 roleRef:
   kind: ClusterRole

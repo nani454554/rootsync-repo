@@ -1,0 +1,16 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: root-sync
+  namespace: config-management-system
+spec:
+  sourceType: git
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/nani555555454554/rootsync-repo.git
+    branch: main
+    dir: application-root/root
+    auth: token
+    period: 5s
+    secretRef:
+      name: nikhil
